@@ -4,7 +4,7 @@
 
 [WARNING]
 ====
-This page lists the URLs of all the update sites for the **June 2015 Anypoint Studio with 3.7.0 Runtime**. Verify your Studio version before proceeding, as installing updates from the incorrect update sites can cause errors.
+This page lists the URLs of all the update sites for the **June 2015 Anypoint Studio with 3.7.0 Runtime** . Verify your Studio version before proceeding, as installing updates from the incorrect update sites can cause errors.
 
 To check your version of Studio, go to *Anypoint Studio* > *About Anypoint Studio*.
 ====
@@ -18,7 +18,8 @@ To access these update sites in Studio:
 [width="100a",cols="33a,33a,33a",options="header"]
 |===
 |Name|Contains |Notes
-|*Anypoint Studio Update Site* |
+|*Anypoint Studio Update Site* |URL ??
+
 Updates for Anypoint Studio application itself.
 
 DataMapper Designer updates
@@ -28,7 +29,8 @@ SAP Connector
 Mule ESB Server 3.7 EE Runtime
 
 |
-|*Mule ESB Runtimes for Studio* |Mule ESB Server Runtime 3.7.0 CE |
+|*Mule ESB Runtimes for Studio* |Mule ESB Server Runtime 3.7.0 CE |URL??
+
 |*Anypoint Connectors Update Site* |All Community, Standard, Select, and Premium Anypoint Connectors available for Studio installation. |
 Connector names are appended with the minimal runtime they support.
 
@@ -39,7 +41,7 @@ RAML API Editor updates
 
  |Read more about link:/anypoint-platform-for-apis/building-your-api[APIkit].
 |*API Gateway Update Site* |API Gateway runtime |Read more about the link:/anypoint-platform-for-apis[Anypoint Platform for APIs].
-|*Anypoint Enterprise Security* |
+|*Anypoint Enterprise Security* |URL ??
 Mule Security Module Extensions:
 
 * CRC-32
@@ -53,7 +55,7 @@ Anypoint Studio Properties File Editor
 
  |Note that you need an Enterprise license to run applications containing link:/mule-user-guide/v/3.7/anypoint-enterprise-security[Anypoint Enterprise Security] features.
 |*Beta Add-ons Update Site* |Anypoint Connector DevKit Studio Module (Beta) |This site contains Beta extensions that you can install for early access to upcoming features.
-|*Anypoint Studio Eclipse Plugin* |
+|*Anypoint Studio Eclipse Plugin* |URL ??
 Eclipse plugin version of Anypoint Studio
 
 SAP Connector
