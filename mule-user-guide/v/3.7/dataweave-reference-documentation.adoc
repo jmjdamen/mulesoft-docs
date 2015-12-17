@@ -2979,7 +2979,8 @@ Returns a time stamp
 -----------------------------------------------------------------
 
 [TIP]
-See <<Acessors, Accessors>> for a list of possible selectors to use here.
+This link doesn't work, also a typo
+See <<Accessors, Accessors>> for a list of possible selectors to use here.
 
 ==== Append Time Zone
 
