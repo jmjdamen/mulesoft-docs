@@ -160,7 +160,7 @@ If using the Anypoint Platform on premises, this section is named *Applications*
 . Click the *Servers* tab, then *Add Servers*.
 . The Add Servers screen displays a command which includes  _*token*_ specifically generated for your gateway. Copy this token to your clipboard.
 . In the server where your gateway resides, open a terminal and go to the gateway's `bin` directory.
-. Run the following command:
+. Run the following command: //command is missing, should be the amc_setup command? 
 +
 Where  `<token>` is the token displayed in the Add Servers screen, and `<server name>` is the name you select for your server.
 +
