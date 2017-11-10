@@ -39,6 +39,13 @@ Approve API access requests from the link:/api-manager/tutorial-set-up-and-deplo
 
 === Required Fields in API Calls
 
+When an HTTP request is transformed into a Mule Message, the following transformations occur:
+
+* Query parameters become part of `message.inboundProperties['http.query.params']`
+* Headers become part of `message.inboundProperties`
+* Form parameters become a map in `message.payload`
+* Attachments become  `message.inboundAttachments`
+
 Use link:/mule-user-guide/v/3.8/mule-expression-language-basic-syntax[Mule expressions] to pass query parameters, *client_id* and **client_secret**, from an application to an API that enforces a client ID-based policy:
 
 [source,code,linenums]
@@ -47,15 +54,15 @@ Use link:/mule-user-guide/v/3.8/mule-expression-language-basic-syntax[Mule expre
  
 #[message.inboundProperties['http.query.params']['client_secret']]
 ----
+Use the following expressions to accept *client_id* and *client_secret* in the headers
+[source,code,linenums]
+----
+#[message.inboundProperties['client_id']]
+ 
+#[message.inboundProperties['client_secret']]
+----
 
 You can change this expression to expect these values in any other element in the Mule Message.
-
-When an HTTP request is transformed into a Mule Message, the following transformations occur:
-
-* Query parameters become part of `message.inboundProperties`
-* Headers become part of `message.inboundProperties`
-* Form parameters become a map in `message.payload`
-* Attachments become  `message.inboundAttachments`
 
 === Considerations for RAML APIs
 
@@ -66,12 +73,12 @@ As established, applying one of these client ID-based policies implies that all 
 [source,yaml,linenums]
 ----
 traits:
-  - rate-limited:
-      queryParameters:
-       client_id:
-        type: string
-      client_secret:
-        type: string
+  client-id-required:
+    queryParameters:
+      client_id:
+        type: string
+      client_secret:
+        type: string
 ----
 
 And then you can apply this trait in each individual operation like this:
@@ -80,7 +87,7 @@ And then you can apply this trait in each individual operation like this:
 ----
 /products:
   get:
-    is: [rate-limited]
+    is: [client-id-required]
     description: Gets a list of all the inventory products.
 ----
 
