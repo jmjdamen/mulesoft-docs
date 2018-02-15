@@ -83,19 +83,6 @@ Each default Role in Anypoint Platform holds pre-defined permissions with a _sco
 * Read Applications
 * Read Servers
 
-| Cloudhub Developer |
-* Create Applications
-* Download Applications
-* Manage Alerts
-* Manage Application Data
-* Manage Queues
-* Manage Schedules
-* Manage Settings
-* Read Applications
-* Read Servers
-| Cloudhub Support |
-* Read Applications
-
 | Exchange Administrators |
 * Create content
 * Manage assets
